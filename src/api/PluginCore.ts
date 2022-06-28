@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-namespace BoilerPlate  {
+namespace CloneRisks  {
     
     /** this is info delivered by the UI when rendering the control */
     export interface IControlOptions extends IBaseControlOptions{
@@ -74,7 +74,7 @@ namespace BoilerPlate  {
         /**  Field type id that will be use when rendering the data */
         fieldType: string,
         /**  default field Parameters*/
-        defaultParameters: IPluginBoilerPlateFieldParameter,
+        defaultParameters: IPluginCloneRisksFieldParameter,
         /**  description of  field  capabilities*/
         fieldConfigOptions: IFieldDescription,
         /**  Default value when none is present */

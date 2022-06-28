@@ -1,7 +1,7 @@
 /// <reference path="./api/PluginCore.ts" />
 
 // eslint-disable-next-line no-unused-vars
-namespace BoilerPlate {
+namespace CloneRisks {
     
     /** This class is allows you to configure the features of your plugin.
      * 
@@ -24,13 +24,13 @@ namespace BoilerPlate {
                 The page itself is implemented in the _ServerSetingsPage.ts 
             */
             customerSettingsPage: {
-                id: "BPP_projectsettings",
-                title: "BPP projectsettings page",
+                id: "CR_projectsettings",
+                title: "CR projectsettings page",
                 enabled: true,
                 defaultSettings: {
                     myServerSetting: "default value for setting defined in Interfaces.ts",
                 },
-                settingName: "BPP_settings",
+                settingName: "CR_settings",
                 help: "This is my help text",
                 helpUrl:"https://docs23.matrixreq.com"
             },
@@ -38,13 +38,13 @@ namespace BoilerPlate {
                 The page itself is implemented in the _ProjectSetingsPage.ts 
             */
             projectSettingsPage: {
-                id: "BPP_projectsettings",
-                title:"BPP projectsettings page",
+                id: "CR_projectsettings",
+                title:"CR projectsettings page",
                 enabled: true,
                 defaultSettings: {
                     myProjectSetting:  "default value for setting defined in Interfaces.ts",
                 },
-                settingName: "BPP_settings",
+                settingName: "CR_settings",
                 help: "This is my help text",
                 helpUrl:"https://docs23.matrixreq.com"
             },
@@ -53,18 +53,18 @@ namespace BoilerPlate {
             */
             menuToolItem: {
                 enabled: true,
-                title:"matrix-ui-plugin-boilerplate-menuitem",
+                title:"ui_plugin_clone_risks-menuitem",
             },
             /*  Add a custom field to enter some data in the UI - set enabled to false if not needed.
                 The field itself is implemented in the _Control.ts 
             */
             field: {
                 enabled: true,
-                fieldType: "matrix-ui-plugin-boilerplate",
+                fieldType: "ui_plugin_clone_risks",
                 defaultValue: "Default value",
-                title: "matrix-ui-plugin-boilerplate-field",
+                title: "ui_plugin_clone_risks-field",
                 fieldConfigOptions: {
-                    id: "matrix-ui-plugin-boilerplate",
+                    id: "ui_plugin_clone_risks",
                     capabilities: {
                         canBePublished: false,
                         canBeReadonly: true,
@@ -75,7 +75,7 @@ namespace BoilerPlate {
                     },
                     class: "",
                     help: "",
-                    label: "matrix-ui-plugin-boilerplate-field",
+                    label: "ui_plugin_clone_risks-field",
                 },
                 defaultParameters: {
                     myParameter:  "default value for setting defined in Interfaces.ts",
@@ -86,8 +86,8 @@ namespace BoilerPlate {
             */
             dashboard: {        
                 
-                id:"BPP",
-                title: "BPP dashboard page",
+                id:"CR",
+                title: "CR dashboard page",
                 enabled: true,
                 icon: "fal fa-cog",
                 parent: "DASHBOARDS",
@@ -139,5 +139,5 @@ namespace BoilerPlate {
 
 // Register the plugin
 $(function () {
-    plugins.register(new BoilerPlate.Plugin());
+    plugins.register(new CloneRisks.Plugin());
 });

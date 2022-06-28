@@ -1,7 +1,7 @@
 /* Setting interfaces */
 
 // eslint-disable-next-line no-unused-vars
-namespace BoilerPlate {
+namespace CloneRisks {
 
 
     /** Server setting for plugin.
@@ -31,7 +31,7 @@ namespace BoilerPlate {
     * each time it is added to a category
     */
 
-    export interface IPluginBoilerPlateFieldParameter extends IFieldParameter {
+    export interface IPluginCloneRisksFieldParameter extends IFieldParameter {
         /** example field parameter */
         myParameter: string;
     }
