@@ -29,7 +29,8 @@ module.exports = {
     // allow empty arrow functions, e.g. ml.UI.addDropdownToValue(something, "Select", options, "w1", weights, false, false, () => { });
     "@typescript-eslint/no-empty-function":["error",  { 'allow': ["arrowFunctions"] }],
     "prefer-const":"off",
-    "@typescript-eslint/no-explicit-any":"off"
+    "@typescript-eslint/no-explicit-any":"off",
+    "no-self-assign":"off"
   }
 
 
