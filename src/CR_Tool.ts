@@ -6,12 +6,12 @@ namespace CloneRisks{
         t:string
     }
 
-    export class Tool{
+    export class Tool {
         
         /** callback to show or hide the menu for a selected item or folder
         * 
         * */ 
-        protected showMenu(itemId:string) {
+        showMenu(itemId:string) {
             if (ml.Item.parseRef(itemId).isFolder && IC.getFieldsOfType( "risk2", ml.Item.parseRef(itemId).type ).length) {
                 // show menu for risk category folders
                 return true;

@@ -138,20 +138,19 @@ namespace CloneRisks  {
         protected enableToolMenu(ul: JQuery, _hook: number) {
             return this.enabledInContext;
         }
-        
-        protected showMenu(itemId:string) {
-            return true;
-        }
-
+       
         // by default plugins add none or one item to the tool menu of displayed items. This class can be overwritten if needed
         updateMenu(ul: JQuery, hook: number) {
 
-            if (Plugin.config.menuToolItem.enabled && this.enableToolMenu(ul,hook) && this.showMenu(app.getCurrentItemId()) ) {
-                const li = $(`<li><a>${Plugin.config.menuToolItem.title}</a></li>`).on("click", () => {
-                    const m = new Tool();
-                    m.menuClicked(app.getCurrentItemId());
-                });
-                ul.append(li);
+            if (Plugin.config.menuToolItem.enabled && this.enableToolMenu(ul,hook)) {
+                const m = new Tool();
+                if ( m.showMenu( app.getCurrentItemId() ) {
+                    const li = $(`<li><a>${Plugin.config.menuToolItem.title}</a></li>`).on("click", () => {
+                        const m = new Tool();
+                        m.menuClicked(app.getCurrentItemId());
+                    });
+                    ul.append(li);
+                }
           }  
         }
 
