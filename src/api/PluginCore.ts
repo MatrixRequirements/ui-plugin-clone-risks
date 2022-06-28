@@ -144,7 +144,7 @@ namespace CloneRisks  {
 
             if (Plugin.config.menuToolItem.enabled && this.enableToolMenu(ul,hook)) {
                 const m = new Tool();
-                if ( m.showMenu( app.getCurrentItemId() ) {
+                if ( m.showMenu( app.getCurrentItemId() )) {
                     const li = $(`<li><a>${Plugin.config.menuToolItem.title}</a></li>`).on("click", () => {
                         const m = new Tool();
                         m.menuClicked(app.getCurrentItemId());
