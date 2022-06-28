@@ -53,7 +53,7 @@ namespace CloneRisks {
             */
             menuToolItem: {
                 enabled: true,
-                title:"ui_plugin_clone_risks-menuitem",
+                title:"Clone risk into this folder",
             },
             /*  Add a custom field to enter some data in the UI - set enabled to false if not needed.
                 The field itself is implemented in the _Control.ts 
