@@ -26,7 +26,7 @@ namespace CloneRisks {
             customerSettingsPage: {
                 id: "CR_projectsettings",
                 title: "CR projectsettings page",
-                enabled: true,
+                enabled: false,
                 defaultSettings: {
                     myServerSetting: "default value for setting defined in Interfaces.ts",
                 },
@@ -40,7 +40,7 @@ namespace CloneRisks {
             projectSettingsPage: {
                 id: "CR_projectsettings",
                 title:"CR projectsettings page",
-                enabled: true,
+                enabled: false,
                 defaultSettings: {
                     myProjectSetting:  "default value for setting defined in Interfaces.ts",
                 },
@@ -59,7 +59,7 @@ namespace CloneRisks {
                 The field itself is implemented in the _Control.ts 
             */
             field: {
-                enabled: true,
+                enabled: false,
                 fieldType: "ui_plugin_clone_risks",
                 defaultValue: "Default value",
                 title: "ui_plugin_clone_risks-field",
@@ -88,7 +88,7 @@ namespace CloneRisks {
                 
                 id:"CR",
                 title: "CR dashboard page",
-                enabled: true,
+                enabled: false,
                 icon: "fal fa-cog",
                 parent: "DASHBOARDS",
                 usefilter: true,
