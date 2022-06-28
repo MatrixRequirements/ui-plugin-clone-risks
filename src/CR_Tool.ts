@@ -52,6 +52,8 @@ namespace CloneRisks{
                 await this.moveOneIn( sourceIds[idx], targetFolder);
             }
             ml.UI.BlockingProgress.SetProgress(0, 100);
+            // reload folder
+            window.location.href = window.location.href;
         }
 
         private async moveOneIn( source:string, target:string) {
